@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box{
+            width: 150px;
+            height: 275px;
+            margin: 400px 1220px 0;
+        }
+        li{list-style: none;}
+        #box ul li{
+            width: 60px;
+            height: 60px;
+            margin-top: 10px;
+            background-color: bisque;
+
+            position: relative;
+        }
+        #box li img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .box_li1{
+            position: relative;
+        }
+        .qdcode{
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border: 3px solid orange;
+            border-radius: 15px;
+            position: absolute;
+            left: -115px;
+            top: -25px;
+            background-image: url(img/qdcode.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li class="box_li1">
+                <img src="/img/weixin.png" alt="">
+                <div class="qdcode"></div>
+            </li>
+            <li style="background: #fff"><img src="/img/qq.png" alt=""></li>
+            <li style="background: #fcc4e6"><img src="/img/dianhua.png" alt=""></li>
+            <li style="background: #f60"><img src="/img/dingbu.png" alt=""></li>
+        </ul>
+    </div>
+
+<script src="jquery191.min.js"></script>    
+<script>
+$(function(){
+   $("box_li1") 
+});
+</script>
+</body>
+</html>
